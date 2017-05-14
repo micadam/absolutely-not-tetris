@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.adam.lista5zad2.GameActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7">
+
+            <Button
+                android:id="@+id/rotateLeftButton"
+                android:text="↶"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tag="rotateLeft"
+                android:onClick="rotate"
+                android:background="@drawable/custom_button"/>
+
+            <com.example.adam.lista5zad2.GameBoard
+                android:id="@+id/gameBoard"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:onClick="hold" />
+
+            <Button
+                android:id="@+id/rotateRightButton"
+                android:text="↷"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tag="rotateRight"
+                android:onClick="rotate"
+                android:background="@drawable/custom_button"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/moveLeftButton"
+                android:text="←"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tag="moveLeft"
+                android:onClick="move"
+                android:background="@drawable/custom_button"/>
+
+            <Button
+                android:id="@+id/dropButton"
+                android:text="⇊"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:onClick="drop"
+                android:background="@drawable/custom_button"/>
+
+            <Button
+                android:id="@+id/moveRightButton"
+                android:text="→"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tag="moveRight"
+                android:onClick="move"
+                android:background="@drawable/custom_button"/>
+        </LinearLayout>
+
+</LinearLayout>
